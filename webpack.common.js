@@ -80,7 +80,8 @@ const webpackConfig = (MODE) => {
     devServer: {
       hot: true, //ホットリロードを有効化（変更された部分のみを更新）
       static: path.resolve(__dirname, 'src'),
-      open: true
+      open: true,
+      port: 3000
     },
     target: 'web', //ローカルサーバのリロードを有効化する
 
