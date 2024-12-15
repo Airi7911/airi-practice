@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js" defer></script>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="../js/jquery.js" defer></script>
   <script src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <img src="./assets/images/leo.jpg" alt="">
-
+  <h1 class="u-mbm is-big">01 | 1-jQuery</h1>
+  <div class="wrapper">
+    <div class="u-mbm btn" id="jsi-q3">Q3</div>
+  </div>
   <script defer>
-      window.addEventListener("load", function () {})
+      window.addEventListener("load", function () {
+        $("#jsi-q3")
+        .on("click", function(){
+          $(this).toggleClass("is-focused");
+        });
+      })
   </script>
 </body>
 </html>
